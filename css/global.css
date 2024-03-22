@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Versão Global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+:root {
+
+    --fontIsa:"Ysabeau Infant";
+    --fontMont:"Montserrat"
+
+}
+
+
+
+
+
+
