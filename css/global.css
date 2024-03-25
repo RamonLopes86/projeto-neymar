@@ -6,9 +6,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--fontIsa);
+
     
     
     
+    
+}
+
+a{
+    color: white;
 }
 
 :root {
@@ -17,6 +26,105 @@
     --fontMont:"Montserrat"
 
 }
+
+
+
+main > .f-section{
+
+    
+    width: 100%;
+    color: white;
+    
+       
+}
+
+main > .f-section > .info-pai{
+
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+
+
+main > .f-section > .info-pai > .image {
+
+    
+    width: 150px;
+    
+
+}
+
+main > .f-section > .info-pai > .image .img-ney{
+
+    width: 100%;
+    border-radius: 50%;
+}
+
+.f-section > video{
+
+  
+   width: 100%;
+   
+   position: absolute;
+   z-index: -1;
+   
+   
+   
+    
+}
+
+
+ .l-section{
+
+    background-image: url(../image/imagem-de-fundo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    
+    position: relative;
+    
+    
+   
+    
+}
+
+.l-section > table{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.links > nav > ul{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.links > nav > ul li {
+
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 500px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    
+
+}
+
 
 
 
