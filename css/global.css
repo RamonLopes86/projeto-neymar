@@ -2,6 +2,7 @@
 
 /* Versão Global */
 
+
 *{
     margin: 0;
     padding: 0;
@@ -9,125 +10,281 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--fontIsa);
-
-    
-    
     
     
 }
 
-a{
-    color: white;
-}
-
-:root {
+:root{
 
     --fontIsa:"Ysabeau Infant";
     --fontMont:"Montserrat"
 
 }
-
-
-
-main > .f-section{
-
     
-    width: 100%;
+a , h1 , li{
+
+    text-decoration: none;
     color: white;
+    text-align: center;
+    font-weight: bold;
     
-       
+}  
+
+h1{
+    font-size: 30px;
+    position: relative;
+    font-weight: 500;
+    padding: 20px 0px;
+    text-shadow: 2px 3px 2px black;
+    
 }
 
-main > .f-section > .info-pai{
 
-    
+
+.txt > ul {
+
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    
+    gap: 12px;
     
     
 }
 
+.txt > ul li {
 
-
-main > .f-section > .info-pai > .image {
-
-    
-    width: 150px;
-    
-
-}
-
-main > .f-section > .info-pai > .image .img-ney{
-
-    width: 100%;
-    border-radius: 50%;
-}
-
-.f-section > video{
-
-  
-   width: 100%;
-   
-   position: absolute;
-   z-index: -1;
-   
-   
-   
+    background-color: rgba(0, 0, 0, 0.466);
+    width:500px;
+    padding: 6px 0px;
+    border-radius: 20px;
+    position: relative;
     
 }
 
+.txt > ul li:nth-child(1)::before{
 
- .l-section{
-
-    background-image: url(../image/imagem-de-fundo.jpg);
-    background-position: center bottom;
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../image/youtube.png);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+
+}
+
+.txt > ul li:nth-child(2)::before{
+
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../image/instagram.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+
+}
+
+.icon{
+
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 6px;
+
+}
+
+.txt > ul li:hover{
+
+    background-color: white;
+
+    a{
+        color:black;
+    }
+    
+}
+
+
+
+.box-pai{
     
     position: relative;
     
-    
-   
-    
 }
 
-.l-section > table{
+.box > .box-pai > video{
+
+    width: 100%;
+}
+.box > .box-pai > .txt{
 
     position: absolute;
-    top: 50%;
+    top:40%;
     left: 50%;
     transform: translate(-50% , -50%);
 }
+    
+.box-pai > .txt > .face{
 
-.links > nav > ul{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image:linear-gradient(to bottom ,#ffdf00, #009c3b ,#004aad);
+    position: relative;
+    left: 160px;
+    top: 20px;
+}   
 
+.box-pai > .txt > .face::after{
+
+    content:"";
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-image: url(../image/neymar.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.box-pai > .txt h1::after{
+
+    content:"";
+    display: inline-block;
+    height:4px;
+    width: 35px;
+    background-image: linear-gradient(to left , green , yellow);
+    position: absolute;
+    bottom: 0;
+    top: 57px;
+    left: 185px;
+    border-radius:20px;
+}
+
+.box-pai > .txt h1::before{
+
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../image/verificado.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 63%;
+    top: 52%;
+}
+
+
+.l-section > .img-ney{
+
+    background-image: url(../image/imagem-de-fundo.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:-5px ;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    
-}
 
-.links > nav > ul li {
-
-    background-color: rgba(0, 0, 0, 0.466);
-    width: 500px;
-    padding: 5px 0px;
-    border-radius: 20px;
-    
 
 }
 
+ table{
+    
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 800px;
+    
+}
+    
+    
+    
+    
+.l-section > .img-ney > .table-rolagem{
+
+    overflow: auto;
+    max-width: 90%;
+    border-radius: 13px;
+    
+}
+
+    
+table > thead tr:nth-child(1){
+
+    background-color: #000000d0;
+}
+
+table > tbody tr:nth-child(even){
+
+    background-color: #000000d0;
+}
+
+table > tbody tr:nth-child(odd){
+
+    background-color: #E9DDCC;
+    color: black;
+    
+}
+
+table > tr,  td , th {
+
+    
+    width: 100px;
+    height: 50px
+}
+
+table .times{
+
+    
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    padding-left: 10px;
+   
+}
+    
+
+table .clubes{
+
+    width: 20px;
+    
+}
+
+
+
+.l-section > .img-ney h2{
+
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-shadow: 2px 3px 2px black;
+    color: white;
+    font-weight: bold;
+}
 
 
 
 
 
 
+
+    
