@@ -2,8 +2,147 @@
 
 /* versao moblie */
 
-@media screen and (max-width:800px) and (min-width:658px)  {
+.icon2{
 
-    /* modelo  - nao esquecer de colocar a cadeia toda para funcionar*/
+    width: 27px;
+}
+.box-pai>.txt #lista-cel{
+
+    animation-name: move;
+    animation-duration: 900ms;
+
+}
+.box-pai>.txt #lista-cel:hover > li:not(:hover){
+
+    opacity: 40%;
+    transition-duration: 400ms;
     
+}
+
+.box-pai>.txt #lista-cel li:hover{
+
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 400ms;
+    
+}
+
+.box-pai>.txt #lista-cel li a img:hover{
+
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+}
+
+
+@keyframes move {
+
+    0%{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translateX(0px);
+        transform: scale(1.5);
+        transition-duration: 500ms;
+    }
+    100%{
+        transition-duration: 500ms;
+
+    }
+}
+
+
+@media screen and (max-width:965px) {
+
+    .f-section>.box>.box-pai>.txt>.ul-geral {
+
+        display: none;
+
+    }
+
+    .box-pai>.txt #lista-cel {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+
+    }
+
+    .box-pai>.txt h1::before {
+
+        left: 80%;
+    }
+
+    .box-pai>.txt h1::after {
+
+        left: 40px;
+    }
+
+    .box-pai > .txt > .face{
+
+        left: 25px;
+        
+        
+        
+    }
+   
+}
+
+
+
+@media screen and (max-width:525px){
+
+    .box-pai > .txt > .face{
+        height: 128px;
+        width: 128px;
+        left: 20%;
+    }
+
+    .box-pai > .txt > .face::after{
+
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:580px){
+
+    .box-pai > .txt > .face{
+        height: 111px;
+        width: 111px;
+        left: 20%;
+        top: 30px;
+    }
+
+    .box-pai > .txt > .face::after{
+
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .box-pai>.txt #lista-cel{
+
+        position: relative;
+        bottom: 5px;
+    }
+
+    .box-pai > .txt > .face{
+        height: 80px;
+        width: 80px;
+        left: 30%;
+        top: 32px;
+    }
+
+    .box-pai > .txt > .face::after{
+
+        width: 70px;
+        height: 70px;
+    }
+
 }

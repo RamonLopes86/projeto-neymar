@@ -21,7 +21,7 @@
 
 }
     
-a , h1 , li{
+a , h1 , .lista-geral{
 
     text-decoration: none;
     color: white;
@@ -41,16 +41,20 @@ h1{
 
 
 
-.txt > ul {
+.txt .ul-geral {
 
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
+    animation-name: geralMove;
+    animation-duration: 800ms;
+    
+    
     
     
 }
 
-.txt > ul li {
+.txt > .ul-geral .lista-geral {
 
     background-color: rgba(0, 0, 0, 0.466);
     width:500px;
@@ -58,9 +62,10 @@ h1{
     border-radius: 20px;
     position: relative;
     
+    
 }
 
-.txt > ul li:nth-child(1)::before{
+.txt > .ul-geral .lista-geral:nth-child(1)::before{
 
     content: "";
     display: inline-block;
@@ -76,7 +81,7 @@ h1{
 
 }
 
-.txt > ul li:nth-child(2)::before{
+.txt > .ul-geral .lista-geral:nth-child(2)::before{
 
     content: "";
     display: inline-block;
@@ -101,9 +106,12 @@ h1{
 
 }
 
-.txt > ul li:hover{
+.txt > .ul-geral .lista-geral:hover{
 
     background-color: white;
+    box-shadow: 0px 0px 10px white;
+    transition-property: all;
+    transition-duration: 800ms;
 
     a{
         color:black;
@@ -282,8 +290,25 @@ table .clubes{
 }
 
 
+@keyframes geralMove {
+
+     0%{
+        transform: translateY(-200px)
+     }
+     100%{
+        transform: translateY(0px);
+     }
+}
 
 
+/* lista mobilie */
+
+
+
+#lista-cel{
+
+    display: none;
+}
 
 
 
